@@ -1,44 +1,78 @@
 <%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+<div class="container my-4">
+  <div class="row featurette d-flex justify-content-center align-items-center my-4">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">About Us
+        <span class="text-muted"></span></h2>
+      <p class="lead">This restuarent was established by Late KP Sharma Oli in the late 90's. He started to sell foods in a carriage. Slowly customers started to like his cooking and built one of the best restuarent of the country at this time.
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?pizza,burger" alt="">
+      </div>
+    </div>
 
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-       <%= image_tag "restuarent2.jpg", :class=>"d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Eat healthy and quality food.</h5>
-        <a class="btn btn-primary" href="#" role="button">Order Now</a>
-        <a class="btn btn-success" href="#" role="button">Book Table</a>
+    <div class="row featurette d-flex justify-content-center align-items-center my-4">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Address<span class="text-muted"></span></h2>
+        <p class="lead">
+          Our restuarent is located in the Damuali of Tanhun district. Situated in a peaceful environment and the view of thee Madi river the restuarent is something else.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?food,sandwich" alt="">
       </div>
     </div>
-    <div class="carousel-item">
-      <%= image_tag "restuarent1.jpg", :class=>"d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Almost all foods are available.</h5>
-        <a class="btn btn-primary" href="#" role="button">Order Now</a>
-        <a class="btn btn-success" href="#" role="button">Book Table</a>
+
+    <div class="row featurette d-flex justify-content-center align-items-center my-4">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Main Facilities<span class="text-muted"></span></h2>
+        <p class="lead">We have a large parking spot. So you don't need top worry about parking. We have fast delivery system. For special ocassions like birthdays and aniversaries, we provide the required environment for the celebration.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?celebration,food delivery" alt="">
       </div>
     </div>
-    <div class="carousel-item">
-      <%= image_tag "restuarent3.jpg", :class=>"d-block w-100" %>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Services like delivery and booking table is available.</h5>
-        <a class="btn btn-primary" href="#" role="button">Order Now</a>
-        <a class="btn btn-success" href="#" role="button">Book Table</a>
-      </div>
-    </div>
+
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade my-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag "restuarent2.jpg", :class=>"d-block w-100" %>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Eat healthy and quality food.</h5>
+          <a class="btn btn-primary" href="#" role="button">Order Now</a>
+          <a class="btn btn-success" href="#" role="button">Book Table</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "restuarent1.jpg", :class=>"d-block w-100" %>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Almost all foods are available.</h5>
+          <a class="btn btn-primary" href="#" role="button">Order Now</a>
+          <a class="btn btn-success" href="#" role="button">Book Table</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "restuarent3.jpg", :class=>"d-block w-100" %>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Services like delivery and booking table is available.</h5>
+          <a class="btn btn-primary" href="#" role="button">Order Now</a>
+          <a class="btn btn-success" href="#" role="button">Book Table</a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
