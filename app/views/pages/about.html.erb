@@ -5,10 +5,10 @@
     <div class="col-md-7">
       <h2 class="featurette-heading">About Us
         <span class="text-muted"></span></h2>
-      <p class="lead">This restuarent was established by Late KP Sharma Oli in the late 90's. He started to sell foods in a carriage. Slowly customers started to like his cooking and built one of the best restuarent of the country at this time.
+      <p class="lead">This restaurant was established by Late KP Sharma Oli in the late 90's. He started to sell foods in a carriage. Slowly customers started to like his cooking and built one of the best restaurant of the country at this time.
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?pizza,burger" alt="">
+        <%= image_tag "restuarent10.jpg", :class=>"bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" %>
       </div>
     </div>
 
@@ -16,10 +16,13 @@
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Address<span class="text-muted"></span></h2>
         <p class="lead">
-          Our restuarent is located in the Damuali of Tanhun district. Situated in a peaceful environment and the view of thee Madi river the restuarent is something else.</p>
+          Our restaurant is located in the Damuali of Tanhun district. Situated in a peaceful environment and the view of thee Madi river makes the restaurant is something else.</p>
+        <center>
+          <a href="https://www.google.com/maps/search/damauli/@27.9806635,84.2545326,17.01z" class="btn btn-info btn-sm" target="_blank">Google Map</a>
+        </center>
       </div>
-      <div class="col-md-5 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?food,sandwich" alt="">
+      <div class="col-md-5 order-md-1 my-2">
+        <%= image_tag "restuarent5.jpg", :class=>"bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" %>
       </div>
     </div>
 
@@ -29,10 +32,52 @@
         <p class="lead">We have a large parking spot. So you don't need top worry about parking. We have fast delivery system. For special ocassions like birthdays and aniversaries, we provide the required environment for the celebration.</p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/300x300/?celebration,food delivery" alt="">
+        <%= image_tag "restuarent9.jpg", :class=>"bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" %>
       </div>
     </div>
+    <hr>
 
+  </div>
+
+  <div class="container my-4">
+    <div class=" cook text-center">
+      <h1>Our Main Cooks</h1>
+    </div>
+    <div class="row my-4">
+      <div class="col-lg-4 text-center">
+        <%= image_tag "xitiz.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <h2>Kshitiz Baniya</h2>
+        <p>He is the Head cook of our restaurant. He was graduated from Dubai University.</p>
+        <p>
+          <a class="btn btn-primary" href="https://www.facebook.com/kshitiz.baaniya" target="_blank" role="button">
+            <i class="fab fa-facebook"></i>
+            Facebook »</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <%= image_tag "bibek.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <h2>Bibek Pandit</h2>
+        <p>He is our SAC (Sub Assistant Cook). He was graduated from Rupatal University.</p>
+        <p>
+          <a class="btn btn-primary" href="https://www.facebook.com/bibek.pandit.37/" target="_blank" role="button">
+            <i class="fab fa-facebook"></i>
+            Facebook »</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <%= image_tag "wiwek.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <h2>Wiwek K.C</h2>
+        <p>He is a junior cook. He is a fast learner. He is a noob but claims himself as the best cook.</p>
+        <p>
+          <a class="btn btn-primary" href="https://www.facebook.com/bibek.kc.7524" target="_blank" role="button">
+            <i class="fab fa-facebook"></i>
+            Facebook »</a>
+        </p>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
   </div>
 
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade my-4" data-ride="carousel">
