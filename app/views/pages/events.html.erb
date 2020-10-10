@@ -1,2 +1,35 @@
-<h1>Pages#events</h1>
-<p>Find me in app/views/pages/events.html.erb</p>
+<%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="container text-center my-4">
+      <h1 class="text-danger">Events</h1>
+      <strong><p class=" lol lead text-dark">Organize your events at our restaurant</p></strong>
+    </div>
+    <hr>
+
+<div class="container my-4">
+  <div class="card-group">
+<div class="card">
+    <%= image_tag "birthday.jpg", :class=>"card-img-top"%>
+  <div class="card-body">
+    <h5 class="card-title">Birthday Parties</h5>
+    <p class="card-text">Celebrate the birthday of your family member and friends.</p>
+  </div>
+</div>
+<div class="card">
+  <%= image_tag "party.jpg", :class=>"card-img-top"%>
+  <div class="card-body">
+    <h5 class="card-title">Private Parties</h5>
+    <p class="card-text">Celebrate your happiness with others in our restaurant.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card">
+  <%= image_tag "anniversary.jpg", :class=>"card-img-top"%>
+  <div class="card-body">
+    <h5 class="card-title">Anniversaries</h5>
+    <p class="card-text"> Take a moment to celebrate your anniversary with your loved one in our restaurent.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+</div>
+
+</div>
