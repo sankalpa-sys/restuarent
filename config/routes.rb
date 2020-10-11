@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+  resources :reports
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   devise_scope :user do

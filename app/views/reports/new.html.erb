@@ -1,0 +1,12 @@
+<center>
+
+
+    <h3>Report a Problem</h3><br>
+    <%=form_for @report do |form| %>
+      <%= form.text_field :title, placeholder: 'Problem Title' %><br><br>
+      <%= form.text_area:description, placeholder: 'Problem Description',rows:6 %><br><br>
+      <%= form.text_area :solve, placeholder: 'Suggestions',rows:6 %><br><br>
+      <%= form.submit "Report" ,:class => "btn btn-success"%>
+    <% end %>
+
+</center>
