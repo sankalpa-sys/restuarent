@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :books
+  resources :orders
   resources :messages
   resources :reports
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

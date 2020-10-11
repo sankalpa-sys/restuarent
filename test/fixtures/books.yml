@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  table: 1
+  number: 1
+  occasion: MyText
+  date: MyText
+  time: MyText
+  duration: MyText
+
+two:
+  table: 1
+  number: 1
+  occasion: MyText
+  date: MyText
+  time: MyText
+  duration: MyText

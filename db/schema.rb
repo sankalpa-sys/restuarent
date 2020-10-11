@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_064241) do
+ActiveRecord::Schema.define(version: 2020_10_11_075206) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "books", force: :cascade do |t|
+    t.integer "table"
+    t.integer "number"
+    t.text "occasion"
+    t.text "date"
+    t.text "time"
+    t.text "duration"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_books_on_user_id"
+  end
 
   create_table "messages", force: :cascade do |t|
     t.string "title"
@@ -22,6 +35,16 @@ ActiveRecord::Schema.define(version: 2020_10_11_064241) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.text "item"
+    t.string "quantity"
+    t.text "address"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "reports", force: :cascade do |t|
@@ -46,10 +69,13 @@ ActiveRecord::Schema.define(version: 2020_10_11_064241) do
     t.string "lastname"
     t.string "username"
     t.boolean "admin"
+    t.string "phone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "books", "users"
   add_foreign_key "messages", "users"
+  add_foreign_key "orders", "users"
   add_foreign_key "reports", "users"
 end
