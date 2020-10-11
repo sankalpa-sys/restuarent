@@ -17,7 +17,6 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-gem 'font-awesome-sass', '~> 5.13.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jt-rails-address'
