@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   def create
     @order = current_user.orders.new(order_params)
     if @order.save
-       flash[:notice] = "We recieved order. Wait some time, We will be right there."
+       flash[:notice] = "We recieved your order. Wait some time, We will be right there."
        redirect_to root_path
     else
       flash[:alert] = "Sorry! Not available right now. "
