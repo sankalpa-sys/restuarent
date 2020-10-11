@@ -1,6 +1,43 @@
 <%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-<div class="container my-4" my-4"=" my-4""="my-4""">
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "restuarent2.jpg", :class=>"d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Eat healthy and quality food.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "restuarent1.jpg", :class=>"d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Almost all foods are available.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "restuarent3.jpg", :class=>"d-block w-100" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Services like delivery and booking table is available.</h5>
+
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container my-4">
   <div class="row featurette d-flex justify-content-center align-items-center my-4">
     <div class="col-md-7">
       <h2 class="featurette-heading">About Us
@@ -45,7 +82,8 @@
     </div>
     <div class="row my-4">
       <div class="col-lg-4 text-center">
-        <%= image_tag "xitiz.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <%= image_tag "xitiz2.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <hr>
         <h4>Kshitiz Baniya</h4>
         <p>He is the Head cook of our restaurant. He was graduated from Dubai University.</p>
         <p>
@@ -56,9 +94,10 @@
       </div>
       <!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center">
-        <%= image_tag "bibek.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
-        <h4>Bibek Pandit</h4>
-        <p>He is our SAC (Sub Assistant Cook). He was graduated from Rupatal University.</p>
+        <%= image_tag "dari.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <hr>
+        <h4>Subash Timilsina</h4>
+        <p>He is our SAC (Sub Assistant Cook). He was graduated from Fewa Tal University.</p>
         <p>
           <a class="btn btn-primary" href="https://www.facebook.com/bibek.pandit.37/" target="_blank" role="button">
             <i class="fab fa-facebook"></i>
@@ -68,6 +107,7 @@
       <!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center">
         <%= image_tag "wiwek.jpg", :class=>" nigga bd-placeholder-img rounded-circle", :height=>"200", :width=>"200" %>
+        <hr>
         <h4>Wiwek K.C</h4>
         <p>He is a junior cook. He is a fast learner. He is a noob but claims himself as the best cook.</p>
         <p>
@@ -80,40 +120,3 @@
     </div>
   </div>
   <hr>
-
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade my-4" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag "restuarent2.jpg", :class=>"d-block w-100" %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Eat healthy and quality food.</h5>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag "restuarent1.jpg", :class=>"d-block w-100" %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Almost all foods are available.</h5>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag "restuarent3.jpg", :class=>"d-block w-100" %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Services like delivery and booking table is available.</h5>
-
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
