@@ -3,7 +3,8 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 import "bootstrap"
-
+import "@fortawesome/fontawesome-free/css/all";
+import "@fortawesome/fontawesome-free/js/all";
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()

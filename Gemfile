@@ -21,6 +21,8 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'jt-rails-address'
 gem 'rails_admin'
+gem 'font-awesome-sass', '~> 5.13.0'
+# gem 'font-awesome-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
