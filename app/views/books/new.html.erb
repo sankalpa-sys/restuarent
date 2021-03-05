@@ -1,14 +1,12 @@
 <center>
 
-  <br><br><h3>Book a Table</h3><br>
+  <br><br><br><h3>Book Table</h3><br>
   <%=form_for @book do |form| %>
-  <%= form.text_field :table, placeholder: 'Table number' %><br><br>
-  <%= form.text_field :number, placeholder: 'Number of People' %><br><br>
-  <%= form.text_field :date, placeholder: 'Date' %><br><br>
-  <%= form.text_field :time, placeholder: 'Time' %><br><br>
-  <%= form.text_field :duration, placeholder: 'Duration' %><br><br>
-
-  <%= form.submit "Book" ,:class => "btn btn-info"%>
+  <%= form.number_field :number, placeholder: 'Table Number' %><br><br>
+  <%= form.number_field :people, placeholder: 'Number of People' %><br><br>
+  <%= form.datetime_field :datetime, placeholder: 'Date & Time' %><br><br>
+  <%= form.text_field :duration, placeholder: 'Duration (in hours)' %><br><br>
+  <%= form.submit "Book" ,:class => "btn btn-success"%>
 <% end %>
 
 </center>
