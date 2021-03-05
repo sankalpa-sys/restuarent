@@ -5,40 +5,39 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :Username%><br />
-      <%= f.text_field :username, autofocus: true, :required => 'required'%>
-    </div>
+
+      <%= f.text_field :username, autofocus: true, :required => 'required',placeholder: "Username"%>
+    </div><br>
 
     <div class="field">
-      <%= f.label :Firstname%><br />
-      <%= f.text_field :firstname, autofocus: true, :required => 'required' %>
-    </div>
+
+      <%= f.text_field :firstname, autofocus: true, :required => 'required',placeholder: "Firstname" %>
+    </div><br>
 
     <div class="field">
-      <%= f.label :Lastname%><br />
-      <%= f.text_field :lastname, autofocus: true, :required => 'required' %>
-    </div>
+
+      <%= f.text_field :lastname, autofocus: true, :required => 'required',placeholder: "Lastname" %>
+    </div><br>
 
     <div class="field">
-      <%= f.label :Email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", :required => 'required' %>
-    </div>
+
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :required => 'required',placeholder: "Email" %>
+    </div><br>
     <div class="field">
-      <%= f.label :Phone%><br />
-      <%= f.text_field :phone, autofocus: true, :required => 'required' %>
-    </div>
+
+      <%= f.text_field :phone, autofocus: true, :required => 'required',placeholder: "Phone" %>
+    </div><br>
 
     <div class="field">
-      <%= f.label :password %>
+
       <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", :required => 'required' %>
-    </div>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", :required => 'required',placeholder: "Password (6 chars min)" %>
+    </div><br>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", :required => 'required' %>
+
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", :required => 'required',placeholder: "Confirm password" %>
     </div><br>
 
     <div class="actions">
