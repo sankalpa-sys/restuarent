@@ -2,8 +2,8 @@
 
   <br><br><h3>Send a Message</h3><br>
   <%=form_for @message do |form| %>
-  <%= form.text_field :title, placeholder: 'Title' %><br><br>
-  <%= form.text_area:description, placeholder: 'Message Description',rows:6 %><br><br>
+  <%= form.text_field :title, placeholder: 'Title', :required => 'required' %><br><br>
+  <%= form.text_area:description, placeholder: 'Message Description',rows:6, :required => 'required' %><br><br>
 
   <%= form.submit "Send" ,:class => "btn btn-primary"%>
 <% end %>

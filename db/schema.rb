@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2021_03_05_100828) do
     t.bigint "user_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
   end
-
+  
   create_table "orders", force: :cascade do |t|
     t.text "item"
     t.string "quantity"
