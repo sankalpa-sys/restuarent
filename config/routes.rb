@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'foods/new'
   get 'books/new'
   resources :books
   resources :orders

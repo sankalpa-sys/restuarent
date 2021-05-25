@@ -2,11 +2,16 @@
 
   <br><br><br><h3>Book Table</h3><br>
   <%=form_for @book do |form| %>
-  <%= form.number_field :number, placeholder: 'Table Number', :required => 'required', :min =>"0"%><br><br>
-  <%= form.number_field :people, placeholder: 'Number of People', :required => 'required',:min=>"0" %><br><br>
-  <%= form.datetime_field :datetime, :placeholder=> 'Date & Time', :required => 'required' %><br><br>
-  <%= form.text_field :duration, placeholder: 'Duration (in hours)', :required => 'required' %><br><br>
-  <%= form.submit "Book" ,:class => "btn btn-success"%>
-<% end %>
+    <div class = "container">
+    <%= form.number_field :number, placeholder: 'Table Number', :required => 'required', :min =>"0", :class => "form-control"%><br><br>
+    <%= form.number_field :people, placeholder: 'Number of People', :required => 'required',:min=>"0", :class => "form-control" %><br><br>
+    <%= form.datetime_field :datetime,placeholder: 'Date & Time', :required => 'required', :class => "form-control" %><br><br>
+    <%= form.text_field :duration, placeholder: 'Duration (in hours)', :required => 'required', :class => "form-control" %><br><br>
+    <%= form.submit "Book" ,:class => "btn btn-success"%>
+    </div>
+  <% end %>
 
 </center>
+
+
+

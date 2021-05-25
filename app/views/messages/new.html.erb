@@ -2,10 +2,14 @@
 
   <br><br><h3>Send a Message</h3><br>
   <%=form_for @message do |form| %>
-  <%= form.text_field :title, placeholder: 'Title', :required => 'required' %><br><br>
-  <%= form.text_area:description, placeholder: 'Message Description',rows:6, :required => 'required' %><br><br>
-
-  <%= form.submit "Send" ,:class => "btn btn-primary"%>
-<% end %>
+    <div class="container">
+      <%= form.label :title, :class => "form-control-label" %>
+      <%= form.text_field :title, placeholder: 'Title', :required => 'required', :class=>"form-control" %><br><br>
+      <%= form.label :description, :class => "form-control-label" %>
+      <%= form.text_area:description, placeholder: 'Message Description',rows:6, :required => 'required', :class => "form-control" %><br><br>
+  
+      <%= form.submit "Send" ,:class => "btn btn-primary"%>
+    </div>
+  <% end %>
 
 </center>

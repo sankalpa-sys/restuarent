@@ -9,21 +9,21 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if current_page?(root_path) %>">
         <a class="nav-link" href="/">Home
           <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if current_page?(pages_about_path) %>"">
         <%= link_to 'About', pages_about_path, :class=>"nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if current_page?(pages_events_path) %>"">
         <%= link_to 'Events', pages_events_path, :class=>"nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if current_page?(pages_services_path) %>"">
         <%= link_to 'Services', pages_services_path, :class=>"nav-link" %>
       </li>
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown <%= 'active' if current_page?(new_report_path) or current_page?(new_message_path) %>"">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Contacts
         </a>

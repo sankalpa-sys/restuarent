@@ -3,11 +3,15 @@
 
   <br><br><h3>Order Food</h3><br>
   <%=form_for @order do |form| %>
-  <%= form.text_area :item, placeholder: 'Food', :required => 'required' %><br><br>
-  <%= form.text_field:quantity, placeholder: 'How much',rows:4, :required => 'required' %><br><br>
-  <%= form.text_area:address, placeholder: 'Delivery Address',rows:4, :required => 'required' %><br><br>
-
-  <%= form.submit "Order" ,:class => "btn btn-danger"%>
-<% end %>
+    <div class = "container">
+    <%= form.text_area :item, placeholder: 'Food', :required => 'required', :class => "form-control" %><br><br>
+    <%= form.text_field:quantity, placeholder: 'Quantity',rows:4, :required => 'required', :class => "form-control" %><br><br>
+    <%= form.text_area:address, placeholder: 'Delivery Address',rows:4, :required => 'required', :class => "form-control" %><br><br>
+    <%= form.submit "Order" ,:class => "btn btn-danger"%>
+    </div>
+  <% end %>
 
 </center>
+
+
+
