@@ -9,8 +9,10 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
+gem 'faraday'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+gem 'khalti'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -22,6 +24,8 @@ gem 'jquery-rails'
 gem 'jt-rails-address'
 gem 'rails_admin'
 gem 'font-awesome-rails'
+
+gem 'khalti'
 # gem 'font-awesome-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

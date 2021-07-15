@@ -1,0 +1,2 @@
+module KhaltiHelper
+end

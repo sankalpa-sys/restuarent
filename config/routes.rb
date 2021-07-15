@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'khalti/index'
+  get 'organize/new'
   get 'foods/new'
   get 'books/new'
-  resources :books
+  resources :books 
   resources :orders
   resources :messages
   resources :reports
